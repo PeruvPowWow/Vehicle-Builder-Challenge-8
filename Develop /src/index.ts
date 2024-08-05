@@ -35,7 +35,16 @@ const car1 = new Car(
 
 // TODO: uncomment once motorbikes are implemented
 // const motorbike1Wheels = [new Wheel(17, "Michelin"), new Wheel(17, "Michelin")];
-// const motorbike1 = new Motorbike(Cli.generateVin(), "black", "Harley Davidson", "Sportster", 2021, 500, 125, motorbike1Wheels);
+// const motorbike1 = new Motorbike(
+// Cli.generateVin(), // Generate a unique VIN for the motorbike
+//  "black", // Color of the motorbike
+//  "Harley Davidson", // Make of the motorbike
+// "Sportster", // Model of the motorbike
+// 2021, //year of the motorbike
+//  500, // Payload capaciity
+// 125, // Top speed
+//  motorbike1Wheels // Array of wheels
+// );
 
 // push vehicles to array
 // TODO: uncomment once trucks are implemented
