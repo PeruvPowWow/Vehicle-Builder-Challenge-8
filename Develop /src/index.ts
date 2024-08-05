@@ -6,21 +6,31 @@ import Wheel from "./classes/Wheel.js";
 import Cli from "./classes/Cli.js";
 
 // create an array of vehicles
-const vehicles = [];
+const vehicles: (Car | Truck | Motorbike)[] = [];
 
 // TODO: uncomment once trucks are implemented
-// const truck1 = new Truck(Cli.generateVin(),"red", "Ford", "F-150", 2021, 5000, 120, [], 10000);
+// const truck1 = new Truck
+// (Cli.generateVin(), // Generate a unique VIN for the truck
+// "red", // Color of the truck
+//  "Ford", // Make of the truck
+// "F-150",// Model of the truck
+//  2021, // Year of truck
+//  5000, // Payload capacity
+//  120, // top speed
+//  [], // Array of wheels (to be defined)
+//  10000 // Towing capacity
+// );
 
 // will use default wheels
 const car1 = new Car(
-  Cli.generateVin(),
-  'blue',
-  'Toyota',
-  'Camry',
-  2021,
-  3000,
-  130,
-  []
+  Cli.generateVin(), // Generate a unique VIN for the car
+  'blue', // Color of the car
+  'Toyota', // Make of the car
+  'Camry', // Model of the car
+  2021, // Year of car
+  3000, // Payload capacity
+  130, // top speed
+  [] // Array of wheels (to be defined)
 );
 
 // TODO: uncomment once motorbikes are implemented
