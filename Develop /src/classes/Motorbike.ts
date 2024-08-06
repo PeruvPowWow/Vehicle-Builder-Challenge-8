@@ -5,12 +5,12 @@ import ImportedWheel from './Wheel.js';
 
 // TODO: The Motorbike class should extend the Vehicle class
 class Motorbike extends Vehicle{
-vin: string = '';
+override vin: string = '';
 color: string;
-make: string = ''; // Add an initializer to the 'make' property
-model: string = '';
-year: number = 0;
-weight: number = 0;
+override make: string = ''; // Add an initializer to the 'make' property
+override model: string = '';
+override year: number = 0;
+override weight: number = 0;
 topSpeed: number;
 wheels: Wheel[];
 
@@ -24,7 +24,7 @@ constructor(
   topSpeed: number,
   wheels: Wheel[] = [new Wheel(32), new Wheel(18)]
 ) {
-  super();
+  super(vin, make, model, year, weight);
 
   this.color = color;
   this.topSpeed = topSpeed;
