@@ -4,6 +4,11 @@ import Driveable from '../interfaces/Driveable.js';
 // Vehicle class that implements Driveable interface
 class Vehicle implements Driveable {
   // Declare properties of the Vehicle class
+  vin: string;
+  make: string;
+  model: string;
+  year: number;
+  weight: number;
   started: boolean;
   currentSpeed: number;
 
