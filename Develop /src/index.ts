@@ -3,7 +3,16 @@ import Truck from "./classes/Truck.js";
 import Car from "./classes/Car.js";
 import Motorbike from "./classes/Motorbike.js";
 import Wheel from "./classes/Wheel.js";
-import Cli from "./classes/Cli.js";
+
+class Cli {
+  generateVin(): string {
+    return "VIN123456789";
+  }
+
+  startCli(): void {
+    // Add your code here to start the CLI
+  }
+}
 
 // create an instance of the Cli class
 const cli = new Cli();

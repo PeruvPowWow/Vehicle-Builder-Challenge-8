@@ -4,7 +4,7 @@ import Vehicle from './Vehicle.js';
 import Car from './Car.js';
 import Truck from './Truck.js';
 import Motorbike from './Motorbike.js';
-import {Wheel} from './Wheel.js';
+import Wheel from './Wheel.js';
 
 // Defining the CLI class
 class Cli {
@@ -97,12 +97,12 @@ class Cli {
         { type: 'input', name: 'tireBrand', message: 'Enter Tire Brand' },
       ])
       .then((answers) => {
-        const wheels = [
+        const wheels: Wheel[] = [
           new Wheel(answers.wheelDiameter, answers.tireBrand),
           new Wheel(answers.wheelDiameter, answers.tireBrand),
           new Wheel(answers.wheelDiameter, answers.tireBrand),
           new Wheel(answers.wheelDiameter, answers.tireBrand),
-        ];
+        ] as Wheel[];
         const truck = new Truck(
           answers.vin,
           answers.color,
@@ -158,7 +158,7 @@ class Cli {
           answers.model,
           parseInt(answers.year),
           parseInt(answers.weight),
-          parseInt(answers.topSpeed), wheels
+          parseInt(answers.topSpeed), 
         );
         this.vehicles.push(motorbike);
         this.selectedVehicleVin = motorbike.vin;
