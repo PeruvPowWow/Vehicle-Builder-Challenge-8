@@ -11,12 +11,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "inquirer": "^9.3.6",
-    "typescript": "^5.4.5"
-  },
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.12.7"
+    "@types/node": "^20.14.14",
+    "inquirer": "^10.1.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }

@@ -41,7 +41,6 @@ const car1 = new Car(
   'Camry', // Model of the car
   2021, // Year of the car
   3000, // Payload capacity
-  130, // Top speed
   [] // Array of wheels (to be defined)
 );
 
